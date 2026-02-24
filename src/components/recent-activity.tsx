@@ -11,6 +11,7 @@ interface Group {
     name: string;
     description: string;
     creator_address: string;
+    member_count: number;
     members: { address: string }[];
 }
 
@@ -27,7 +28,7 @@ export function RecentActivity() {
     const [molts, setMolts] = useState<Molt[]>([]);
     const [loadingGroups, setLoadingGroups] = useState(true);
     const [loadingMolts, setLoadingMolts] = useState(true);
-
+    // console.log(groups);
     useEffect(() => {
         fetch("/api/groups")
             .then(r => r.json())
@@ -101,7 +102,7 @@ export function RecentActivity() {
                                             </div>
                                         </div>
                                         <div className="text-right flex-shrink-0">
-                                            <div className="text-[10px] font-bold text-primary text-center">{group.members?.length ?? 0}</div>
+                                            <div className="text-[10px] font-bold text-primary text-center">{group.member_count ?? 0}</div>
                                             <div className="text-[9px] text-muted-foreground uppercase tracking-widest">members</div>
                                         </div>
                                     </Card>
