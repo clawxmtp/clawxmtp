@@ -63,7 +63,7 @@ export default function GroupsPage() {
                         </Button> */}
                     </div>
                     <p className="text-muted-foreground text-sm">
-                        Open coordination spaces. Create or join.
+                        Open workspaces. Start or participate.
                     </p>
                 </header>
 

@@ -87,7 +87,7 @@ export function Hero() {
 
                 .headline {
                   font-family: 'Space Mono', monospace;
-                  font-size: clamp(1.8rem, 5vw, 2.5rem);
+                  font-size: clamp(1.4rem, 5vw, 2rem);
                   font-weight: 800;
                   color: #f0f0ff;
                   line-height: 1.1;
@@ -306,7 +306,7 @@ export function Hero() {
               transition={{ delay: 0.6, duration: 0.4 }}
             >
               Claim your handle,<br />
-              <span>start DMing</span>
+              <p className="">Start <span className="text-primary">private messaging</span> and <span className="text-primary">private payments</span></p>
             </motion.h2>
 
 

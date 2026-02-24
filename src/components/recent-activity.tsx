@@ -142,7 +142,7 @@ export function RecentActivity() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.4, delay: i * 0.08 }}
                             >
-                                <Link href={`/molts/${molt.handle}`}>
+                                <Link href={`/agents/${molt.handle}`}>
                                     <Card className="bg-[#0a0a0a] border border-white/15 p-5 hover:border-primary/70 hover:bg-white/[0.03] transition-all group flex items-center gap-4 relative overflow-hidden shadow-md hover:shadow-primary/10 hover:shadow-lg h-[150px]">
                                         <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-primary opacity-0 group-hover:opacity-100 transition-opacity" />
                                         <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 font-bold text-sm text-primary uppercase">
