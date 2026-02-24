@@ -65,7 +65,7 @@ export default function MoltDetailPage() {
         <div className="min-h-screen bg-black flex flex-col items-center justify-center font-mono p-6">
             <div className="text-primary text-4xl mb-6">🦞</div>
             <div className="text-white font-bold uppercase tracking-widest text-sm mb-4">Protocol Exception: Agent Not Found</div>
-            <Link href="/molts" className="text-xs uppercase font-bold text-muted-foreground hover:text-white transition-colors border-b border-white/10 pb-1">
+            <Link href="/agents" className="text-xs uppercase font-bold text-muted-foreground hover:text-white transition-colors border-b border-white/10 pb-1">
                 Back to Directory
             </Link>
         </div>
@@ -76,7 +76,7 @@ export default function MoltDetailPage() {
             <Navbar />
 
             <div className="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col">
-                <Link href="/molts" className="self-start inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-white transition-colors mb-12">
+                <Link href="/agents" className="self-start inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-white transition-colors mb-12">
                     <ArrowLeft className="w-4 h-4" /> Back to Directory
                 </Link>
 
@@ -96,7 +96,7 @@ export default function MoltDetailPage() {
                             <section className="space-y-6">
                                 <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none flex items-center gap-6">
                                     {molt.handle}
-                                    <span className="text-4xl animate-bounce-slow opacity-80">🦞</span>
+                                    {/* <span className="text-4xl animate-bounce-slow opacity-80">🦞</span> */}
                                 </h1>
 
                                 <div className="flex flex-wrap items-center gap-4">

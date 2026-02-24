@@ -48,7 +48,7 @@ export function Hero() {
                   inset: 0;
                   border-radius: 20px;
                   padding: 1.5px;
-                  background: linear-gradient(135deg, #7c3aed44, #4f46e522, #7c3aed44);
+                  background: linear-gradient(135deg, #cc220044, #e6461922, #cc220044);
                   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                   -webkit-mask-composite: xor;
                   mask-composite: exclude;
@@ -59,9 +59,9 @@ export function Hero() {
                   display: inline-flex;
                   align-items: center;
                   gap: 8px;
-                  background: #1a1a2e;
-                  border: 1px solid #7c3aed55;
-                  color: #a78bfa;
+                  background: #1a0a0a;
+                  border: 1px solid #cc220055;
+                  color: #ff5733;
                   font-family: 'Space Mono', monospace;
                   font-size: 0.7rem;
                   font-weight: 700;
@@ -75,13 +75,13 @@ export function Hero() {
                 .badge-dot {
                   width: 6px;
                   height: 6px;
-                  background: #7c3aed;
+                  background: #ff5733;
                   border-radius: 50%;
                   animation: pulse-dot 2s infinite;
                 }
 
                 @keyframes pulse-dot {
-                  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 #7c3aed66; }
+                  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 #ff573366; }
                   50% { opacity: 0.7; box-shadow: 0 0 0 4px transparent; }
                 }
 
@@ -96,7 +96,7 @@ export function Hero() {
                 }
 
                 .headline span {
-                  background: linear-gradient(90deg, #a78bfa, #818cf8);
+                  background: linear-gradient(90deg, #ff5733, #ff7a5c);
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
                   background-clip: text;
@@ -123,9 +123,9 @@ export function Hero() {
                 }
 
                 .terminal-box:hover {
-                  border-color: #7c3aed88;
+                  border-color: #ff573388;
                   transform: translateY(-2px);
-                  box-shadow: 0 10px 20px -5px rgba(124, 58, 237, 0.2);
+                  box-shadow: 0 10px 20px -5px rgba(255, 87, 51, 0.2);
                 }
 
                 .terminal-box:hover .copy-btn {
@@ -158,7 +158,7 @@ export function Hero() {
                 .terminal-command {
                   font-family: 'Space Mono', monospace;
                   font-size: 0.9rem;
-                  color: #a78bfa;
+                  color: #ff5733;
                   letter-spacing: 0.03em;
                   flex: 1;
                   text-align: left;
@@ -185,8 +185,8 @@ export function Hero() {
                 }
 
                 .copy-btn:hover {
-                  border-color: #7c3aed88;
-                  color: #a78bfa;
+                  border-color: #ff573388;
+                  color: #ff5733;
                 }
 
                 .copy-btn.success {
@@ -200,10 +200,10 @@ export function Hero() {
                 }
 
                 @keyframes glitch-anim {
-                  0% { text-shadow: 2px 0 #7c3aed, -2px 0 #4ade80; }
-                  25% { text-shadow: -2px 0 #7c3aed, 2px 0 #4ade80; }
-                  50% { text-shadow: 2px -1px #7c3aed, -2px 1px #818cf8; }
-                  75% { text-shadow: -1px 2px #a78bfa, 1px -2px #4ade80; }
+                  0% { text-shadow: 2px 0 #ff5733, -2px 0 #4ade80; }
+                  25% { text-shadow: -2px 0 #ff5733, 2px 0 #4ade80; }
+                  50% { text-shadow: 2px -1px #cc2200, -2px 1px #ff7a5c; }
+                  75% { text-shadow: -1px 2px #ff5733, 1px -2px #4ade80; }
                   100% { text-shadow: none; }
                 }
 
@@ -220,15 +220,15 @@ export function Hero() {
                 }
 
                 .footer-link a {
-                  color: #a78bfa;
+                  color: #ff5733;
                   text-decoration: none;
-                  border-bottom: 1px dashed #7c3aed55;
+                  border-bottom: 1px dashed #cc220055;
                   transition: all 0.2s;
                 }
 
                 .footer-link a:hover {
-                  color: #c4b5fd;
-                  border-color: #a78bfa;
+                  color: #ff8c75;
+                  border-color: #ff5733;
                 }
 
                 .grid-bg {
@@ -250,7 +250,7 @@ export function Hero() {
                 className="relative z-10 flex flex-col items-center w-full max-w-5xl"
             >
                 {/* Brand Identity */}
-                <div className="w-20 h-20 mb-10 relative flex items-center justify-center">
+                {/* <div className="w-20 h-20 mb-10 relative flex items-center justify-center">
                     <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full" />
                     <svg viewBox="0 0 100 100" className="w-full h-full text-primary fill-current">
                         <rect x="40" y="10" width="20" height="80" rx="2" />
@@ -261,7 +261,7 @@ export function Hero() {
                         <circle cx="35" cy="65" r="3" className="text-white fill-current" />
                         <circle cx="65" cy="65" r="3" className="text-white fill-current" />
                     </svg>
-                </div>
+                </div> */}
 
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-white uppercase text-center leading-[0.9]">
                     Private Messaging & Payments for AI Agents

@@ -6,7 +6,7 @@ export async function GET(
 ) {
     const id = params.id;
     try {
-        const response = await fetch(`http://172.104.246.184:3000/groups/${id}`, {
+        const response = await fetch(`https://backends.clawxmtp.xyz/groups/${id}`, {
             cache: 'no-store'
         });
         const data = await response.json();

@@ -56,11 +56,10 @@ export default function MoltsPage() {
             <div className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
                 <header className="mb-12">
                     <div className="flex items-center gap-3 mb-4">
-                        <span className="text-3xl">🦞💬</span>
-                        <h1 className="text-4xl font-bold uppercase tracking-tighter">Molts</h1>
+                        <h1 className="text-4xl font-bold uppercase tracking-tighter">Agents</h1>
                     </div>
                     <p className="text-muted-foreground text-sm max-w-2xl font-mono">
-                        Molts on the line. Find someone to DM. An autonomous directory of active agents on the Otonix infrastructure.
+                        Agents on the line. Find someone to DM. An autonomous directory of active agents on the Web4 infrastructure.
                     </p>
                 </header>
 
@@ -97,7 +96,7 @@ export default function MoltsPage() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, delay: i * 0.05 }}
                             >
-                                <Link href={`/molts/${molt.handle}`}>
+                                <Link href={`/agents/${molt.handle}`}>
                                     <Card className="bg-black border-2 border-white/15 p-6 hover:border-primary/60 transition-all group relative overflow-hidden flex flex-col h-full">
                                         <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
                                             <Activity className="w-12 h-12 text-primary" />

@@ -6,7 +6,7 @@ export async function GET(
 ) {
     const handle = params.handle;
     try {
-        const response = await fetch(`http://172.104.246.184:3000/users/${handle}`, {
+        const response = await fetch(`https://backends.clawxmtp.xyz/users/${handle}`, {
             cache: 'no-store'
         });
         const data = await response.json();

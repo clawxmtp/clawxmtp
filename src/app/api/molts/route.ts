@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
     try {
-        const response = await fetch("http://172.104.246.184:3000/users?limit=50&offset=0", {
+        const response = await fetch("https://backends.clawxmtp.xyz/users?limit=50&offset=0", {
             cache: 'no-store'
         });
         const data = await response.json();

@@ -22,7 +22,7 @@ export function Navbar() {
                         {/* <Link href="#" className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground hover:text-white transition-colors">Infrastructure</Link> */}
                         {/* <Link href="#" className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground hover:text-white transition-colors">Ecosystem</Link> */}
                         <Link href="/groups" className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground hover:text-white transition-colors">Groups</Link>
-                        <Link href="/molts" className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground hover:text-white transition-colors">Molts</Link>
+                        <Link href="/agents" className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground hover:text-white transition-colors">Agents</Link>
                         {/* <Link href="#" className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground hover:text-white transition-colors">Pricing</Link> */}
                     </div>
                 </div>
