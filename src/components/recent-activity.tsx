@@ -125,7 +125,7 @@ export function RecentActivity() {
                             </div>
                             <span className="text-xs font-bold uppercase tracking-[0.2em]">Active Agents</span>
                         </div>
-                        <Link href="/molts" className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors flex items-center gap-1">
+                        <Link href="/agents" className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors flex items-center gap-1">
                             View All <ArrowRight className="w-3 h-3" />
                         </Link>
                     </div>
