@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Card } from "@/components/ui/card";
-import { Search, User, Zap, Activity } from "lucide-react";
+import { Search, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -84,7 +84,7 @@ export default function MoltsPage() {
                 {loading ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[...Array(6)].map((_, i) => (
-                            <div key={i} className="h-64 bg-white/5 rounded-2xl animate-pulse" />
+                            <div key={i} className="h-52 bg-white/5 rounded-2xl animate-pulse" />
                         ))}
                     </div>
                 ) : filteredMolts.length > 0 ? (
@@ -97,34 +97,43 @@ export default function MoltsPage() {
                                 transition={{ duration: 0.4, delay: i * 0.05 }}
                             >
                                 <Link href={`/agents/${molt.handle}`}>
-                                    <Card className="bg-black border-2 border-white/15 p-6 hover:border-primary/60 transition-all group relative overflow-hidden flex flex-col h-full">
-                                        <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
-                                            <Activity className="w-12 h-12 text-primary" />
-                                        </div>
+                                    <Card className="bg-zinc-950 border border-white/10 p-5 hover:border-primary/50 hover:shadow-[0_0_28px_-6px_hsl(var(--primary)/0.35)] transition-all duration-300 group relative overflow-hidden flex flex-col h-full rounded-2xl cursor-pointer">
+                                        {/* Hover gradient */}
+                                        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
-                                        <div className="relative z-10 flex flex-col h-full">
-                                            <div className="mb-4">
-                                                <h3 className="text-primary font-bold text-lg group-hover:brightness-125 transition-all">
-                                                    @{molt.handle}
-                                                </h3>
-                                                <div className="text-xs font-bold uppercase mt-1 text-white/90">
-                                                    {molt.name}
+                                        <div className="relative z-10 flex flex-col h-full gap-4">
+                                            {/* Header: avatar + names */}
+                                            <div className="flex items-center gap-3">
+                                                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary/30 to-primary/5 border border-primary/20 flex items-center justify-center shrink-0">
+                                                    <span className="text-primary font-extrabold text-sm uppercase">
+                                                        {molt.handle.slice(0, 2)}
+                                                    </span>
+                                                </div>
+                                                <div className="min-w-0">
+                                                    <h3 className="text-primary font-bold text-sm leading-tight group-hover:brightness-125 transition-all truncate">
+                                                        @{molt.handle}
+                                                    </h3>
+                                                    <div className="text-[10px] font-semibold uppercase tracking-widest text-white/40 mt-0.5 truncate">
+                                                        {molt.name}
+                                                    </div>
                                                 </div>
                                             </div>
 
-                                            <p className="text-xs text-muted-foreground leading-relaxed mb-10 flex-grow font-mono">
-                                                {molt.description || <span className="italic opacity-50">No description provided.</span>}
+                                            {/* Description */}
+                                            <p className="text-xs text-white/40 leading-relaxed flex-grow font-mono line-clamp-3">
+                                                {molt.description || <span className="italic">No description provided.</span>}
                                             </p>
 
-                                            <div className="pt-4 border-t border-white/5 flex items-center justify-between text-[10px] uppercase font-bold tracking-widest text-muted-foreground">
-                                                <div className="flex items-center gap-2">
-                                                    <Zap className="w-3 h-3 text-primary/60" />
-                                                    <span className="truncate max-w-[120px]">
+                                            {/* Footer */}
+                                            <div className="pt-3 border-t border-white/5 flex items-center justify-between">
+                                                <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/25">
+                                                    <Zap className="w-3 h-3 text-primary/40" />
+                                                    <span className="font-mono">
                                                         {molt.wallet_address.slice(0, 6)}...{molt.wallet_address.slice(-4)}
                                                     </span>
                                                 </div>
-                                                <span className="flex items-center gap-1 group-hover:text-white transition-colors">
-                                                    View profile
+                                                <span className="text-[10px] uppercase tracking-widest font-bold text-white/30 group-hover:text-primary transition-colors flex items-center gap-0.5">
+                                                    Open <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
                                                 </span>
                                             </div>
                                         </div>

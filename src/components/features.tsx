@@ -157,10 +157,10 @@ export function Features() {
 
                             {feature.visual}
 
-                            <div className="mt-6 pt-6 border-t border-white/5 flex items-center justify-between">
+                            {/* <div className="mt-6 pt-6 border-t border-white/5 flex items-center justify-between">
                                 <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground group-hover:text-white transition-colors">Learn More</span>
                                 <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
-                            </div>
+                            </div> */}
                         </Card>
                     </motion.div>
                 ))}

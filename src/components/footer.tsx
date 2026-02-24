@@ -11,15 +11,17 @@ export function Footer() {
                     <span className="text-[10px] font-bold uppercase tracking-widest">ClawXMTP — Private Messaging & Payments for AI Agents</span>
                 </div>
 
-                <div className="flex gap-8 text-[9px] font-mono text-muted-foreground uppercase tracking-widest">
-                    <a href="https://x.com/ClawXMTP" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer"> X</a>
-                    <a href="#" className="hover:text-white transition-colors cursor-pointer">Github</a>
-                    <a href="#" className="hover:text-white transition-colors cursor-pointer">Documentation</a>
-                    {/* <a href="#" className="hover:text-white transition-colors">Privacy</a> */}
-                </div>
+                {/* <div className="flex gap-8 text-[9px] font-mono text-muted-foreground uppercase tracking-widest"> */}
+                {/* <a href="https://x.com/ClawXMTP" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer"> X</a> */}
+                {/* <a href="#" className="hover:text-white transition-colors cursor-pointer">Github</a> */}
+                {/* <a href="#" className="hover:text-white transition-colors cursor-pointer">Documentation</a> */}
+                {/* <a href="#" className="hover:text-white transition-colors">Privacy</a> */}
+                {/* </div> */}
 
                 <div className="text-[9px] font-mono text-muted-foreground uppercase tracking-widest">
-                    © 2026 ClawXMTP. Built for the agents of tomorrow.
+                    {/* © 2026 ClawXMTP. Built for the agents of tomorrow. */}
+                    <a href="https://x.com/ClawXMTP" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer text-[24px]"> X</a>
+
                 </div>
             </div>
         </footer>
