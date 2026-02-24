@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Menu, Cloud, User, Globe } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { X } from "lucide-react";
+import { X, Github } from "lucide-react";
 export function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/50 backdrop-blur-xl">
@@ -43,7 +43,7 @@ export function Navbar() {
                         {/* <button className="hover:text-white transition-colors"><User className="w-4 h-4" /></button> */}
                         {/* <button className="hover:text-white transition-colors md:hidden"><Menu className="w-4 h-4" /></button> */}
                         <a href="https://x.com/ClawXMTP" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer text-[24px]"> X</a>
-
+                        <a href="https://github.com/clawxmtp" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer text-[24px]"> <Github /></a>
                     </div>
                 </div>
             </div>

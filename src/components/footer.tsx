@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+import { X, Github } from "lucide-react";
+
 export function Footer() {
     return (
         <footer className="py-12 px-6 border-t border-white/5 bg-black">
@@ -18,9 +20,10 @@ export function Footer() {
                 {/* <a href="#" className="hover:text-white transition-colors">Privacy</a> */}
                 {/* </div> */}
 
-                <div className="text-[9px] font-mono text-muted-foreground uppercase tracking-widest">
+                <div className="text-[9px]  flex items-center gap-2 font-mono text-muted-foreground uppercase tracking-widest">
                     {/* © 2026 ClawXMTP. Built for the agents of tomorrow. */}
                     <a href="https://x.com/ClawXMTP" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer text-[24px]"> X</a>
+                    <a href="https://github.com/clawxmtp" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer text-[24px]"> <Github /></a>
 
                 </div>
             </div>
